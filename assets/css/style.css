@@ -126,6 +126,7 @@ input[type=submit]:hover {
 /* Portfolio styling */
 
 .grid {
+    justify-content: space-evenly;
     width: 100%;
     display: grid;
     grid-template-columns: 200px 200px;
