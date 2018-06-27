@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;  
 }
 
+
 /* Navigation styling */
 
 .navbar {
@@ -63,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: teal;
 }
 
+
 /* Container styling */
 
 .container {
@@ -92,6 +94,7 @@ hr {
 #about {
     line-height: 24px;
 }
+
 
 /* Contact page styling */
 
@@ -123,6 +126,7 @@ input[type=submit]:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 /* Portfolio styling */
 
 .grid {
@@ -131,47 +135,29 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px 200px;
-    grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
 
-.grid > div {
+.grid > a {
+    height: 200px;
+    width: 200px;
     background-image: url("http://www.fillmurray.com/200/200");
+    transition: .1s box-shadow;
+    text-decoration: none;
 }
 
-.grid > div > p {
+.grid > a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid > a > p {
     color: white;
     font-size: 1.2rem;
     background-color: teal;
-    line-height: 1.75rem;
+    line-height: 2.25rem;
     text-align: center;
-    margin-top: 75%;
+    margin-top: 65%;
 }
-
-
-/* table {
-    margin: auto;
-}
-
-td {
-    padding: 0 20px 20px 0;
-}
-
-td p {
-    text-align: center;
-    margin-top: 75%;
-    background-color: teal;
-    width: 100%;
-    line-height: 40px;
-}
-
-.portItem1, .portItem2, .portItem3, .portItem4, .portItem5, .portItem6 {
-    background-image: url("http://www.fillmurray.com/200/200");
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-} */
-
 
 
 /* Footer styling */
