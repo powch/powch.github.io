@@ -3,25 +3,27 @@ body {
     background-color: white;
     background-image: url("../images/what-the-hex.png");
     background-repeat: repeat;
+    color: #777777;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;  
 }
 
+
 /* Navigation styling */
 
 .navbar {
-    background-color: rgb(66, 65, 70);
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    border-bottom: 8px;
+    border-bottom: 1px;
     border-style: solid;
-    border-color: teal;
-        box-shadow: 0px 5px 20px 0px grey;
+    border-color: #cccccc;
+    box-shadow: 0px 5px 20px 0px grey;
 }
 
 .navContent {
@@ -31,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .studentName {
     padding: 20px;
-    color: white;
+    color: #ffffff;
     background-color: teal;
     width: fit-content;
     font-size: 3rem;
@@ -51,30 +53,35 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.25rem;
 }
 
-.navitem a {
-    color: white;
+.navitem > a {
+    color: #777777;
     text-decoration: none;
     background-color: none;
     padding: 10px;
-    transition: .2s background-color;
+    transition: .2s background-color, color;
 }
 
-.navitem a:hover {
+.navitem > a:hover {
     background-color: teal;
+    color: white;
 }
+
 
 /* Container styling */
 
 .container {
-    width: 960px;
-    background-color: white;
+    width: 900px;
+    background-color: #ffffff;
     padding: 30px 30px 100px 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: auto;
     margin-top: 150px;
+    border: 1px;
+    border-style: solid;
+    border-color: #dddddd;
 }
 
-.container img {
+.container > img {
     float: left;
     margin-right: 15px;
 }
@@ -82,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 .heading {
     font-size: 1.75rem;
     margin-bottom: 20px;
-    color: teal;
+    color: #4aaaa5;
 }
 
 hr {
@@ -93,18 +100,20 @@ hr {
     line-height: 24px;
 }
 
+
 /* Contact page styling */
 
 input[type=text] {
     box-sizing: border-box;
     width: 100%;
     margin: 5px 0 10px 0;
-    padding: 12px 20px;
+    padding: 12px 5px;
 }
 
 textarea {
     box-sizing: border-box;
     margin: 5px 0 10px 0;
+    padding: 12px 5px;
     height: 200px;
     width: 100%;
     resize: none;
@@ -123,6 +132,7 @@ input[type=submit]:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 /* Portfolio styling */
 
 .grid {
@@ -131,47 +141,29 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px 200px;
-    grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
 
-.grid > div {
+.grid > a {
+    height: 200px;
+    width: 200px;
     background-image: url("http://www.fillmurray.com/200/200");
+    transition: .1s box-shadow;
+    text-decoration: none;
 }
 
-.grid > div > p {
+.grid > a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid > a > p {
     color: white;
     font-size: 1.2rem;
     background-color: teal;
-    line-height: 1.75rem;
+    line-height: 2.25rem;
     text-align: center;
-    margin-top: 75%;
+    margin-top: 65%;
 }
-
-
-/* table {
-    margin: auto;
-}
-
-td {
-    padding: 0 20px 20px 0;
-}
-
-td p {
-    text-align: center;
-    margin-top: 75%;
-    background-color: teal;
-    width: 100%;
-    line-height: 40px;
-}
-
-.portItem1, .portItem2, .portItem3, .portItem4, .portItem5, .portItem6 {
-    background-image: url("http://www.fillmurray.com/200/200");
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-} */
-
 
 
 /* Footer styling */
@@ -180,7 +172,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: rgb(66, 65, 70);
+    background-color: #666666;
     border-top: 8px;
     border-style: solid;
     border-color: teal;
@@ -188,8 +180,8 @@ footer {
     width: 100%;
 }
 
-footer p {
+footer > p {
     color: white;
-    padding: 15px;
+    padding: 15px 0 15px 0;
     text-align: center;
 }
